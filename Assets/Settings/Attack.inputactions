@@ -1,0 +1,34 @@
+{
+    "name": "Attack",
+    "maps": [
+        {
+            "name": "PlayerAttack",
+            "id": "5472c68b-f8d5-47e0-8fcc-dda9255f9d43",
+            "actions": [
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "81f84240-3208-4fd5-82c3-ebaa2b294279",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "205e8521-2562-4259-8ae9-177cd5026075",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
