@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-git lfs track "Proj Dev Team 2"
+git lfs track "Proj Dev Team 2.psd"
 git add .gitattributes
