@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+git lfs track "C:\Users\garre\OneDrive\Documents\Proj Dev Team 2"
+git add .gitattributes
