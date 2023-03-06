@@ -17,6 +17,12 @@ public class PlayerController : MonoBehaviour
     Vector3 moveDirection;
     Vector2 moveInput;
 
+    public bool canShoot;
+    public Rigidbody smallShot;
+    public Transform bulletSpawnPoint;
+    //public GameObject bulletPrefab;
+    public float bulletSpeed = 20;
+
     private void Awake()
     {
         charCTRL = GetComponent<CharacterController>();
@@ -24,6 +30,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        canShoot = true;
         anim = GetComponentInChildren<Animator>();
     }
 
@@ -45,9 +52,24 @@ public class PlayerController : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothing);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            
+
         }
 
         charCTRL.Move(moveVelocity * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (canShoot) StartCoroutine(PlayerShoot());
+        }
+
+        IEnumerator PlayerShoot()
+        {
+            Rigidbody playerBullet;
+            playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
+            playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
+            canShoot = false;
+            yield return new WaitForSeconds(0.5f);
+            canShoot = true;
+        }
     }
 }
