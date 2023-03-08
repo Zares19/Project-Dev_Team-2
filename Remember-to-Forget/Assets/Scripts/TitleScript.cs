@@ -27,4 +27,10 @@ public class TitleScript : MonoBehaviour
     {
         SceneManager.LoadScene("Player");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
+    }
 }
