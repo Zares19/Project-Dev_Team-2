@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     public bool canShoot;
     public Rigidbody smallShot;
     public Transform bulletSpawnPoint;
-    //public GameObject bulletPrefab;
     public float bulletSpeed = 20;
+    public int numberOfBullets = 10;
 
     private void Awake()
     {
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (canShoot) StartCoroutine(PlayerShoot());
+            if (canShoot & numberOfBullets > 0) StartCoroutine(PlayerShoot());
         }
 
         IEnumerator PlayerShoot()
@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
             playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
             playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
             canShoot = false;
+            numberOfBullets--;
             yield return new WaitForSeconds(0.5f);
             canShoot = true;
         }
