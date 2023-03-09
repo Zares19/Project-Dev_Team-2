@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    [SerializeField] public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
 
@@ -14,14 +14,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(GameIsPaused)
-            {
+            if (GameIsPaused)
                 Resume();
-            }else
-            {
-                Pause();
-            }
         }
+        else
+        {
+            Pause();
+        }
+
     }
 
     public void Resume()
@@ -33,9 +33,10 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        GameIsPaused = true; 
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        GameIsPaused = true;
+        
     }
 
     public void Title()

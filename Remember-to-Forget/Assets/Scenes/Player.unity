@@ -368,6 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050493cdf34ae6246968387cb8abaf94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseTime: 0
   pauseMenuUI: {fileID: 1663035261}
 --- !u!1 &370105166
 GameObject:
@@ -486,6 +487,7 @@ MonoBehaviour:
   smallShot: {fileID: 6368673886103987744, guid: 44d5c7ebda4d5b748ae55f594595b612, type: 3}
   bulletSpawnPoint: {fileID: 2119389212}
   bulletSpeed: 2000
+  numberOfBullets: 10
 --- !u!136 &370105173
 CapsuleCollider:
   m_ObjectHideFlags: 0
