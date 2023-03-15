@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 157957121}
   - component: {fileID: 157957120}
   - component: {fileID: 157957119}
-  - component: {fileID: 157957118}
+  - component: {fileID: 157957123}
   m_Layer: 0
   m_Name: Loading Zone (1)
   m_TagString: Untagged
@@ -240,20 +240,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &157957118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157957117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 001ec36ab709c3b48891aa47bc9ac170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadName: Game
-  unloadName: Basement
 --- !u!65 &157957119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -332,6 +318,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &157957123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157957117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001ec36ab709c3b48891aa47bc9ac170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadName: Game
+  unloadName: Basement
 --- !u!1 &166791640
 GameObject:
   m_ObjectHideFlags: 0
