@@ -65,4 +65,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HRO_Tutorial.unity
     guid: a184100ddc4593f4f83eec03e8caf172
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: e82037b266d6f8a44b11afea0cf98fa1
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 69d681b608c0f6247a835f2307db3086
   m_configObjects: {}

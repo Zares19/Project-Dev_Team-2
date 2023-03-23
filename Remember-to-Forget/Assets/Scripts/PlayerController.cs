@@ -23,54 +23,76 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 20;
     public int numberOfBullets = 10;
 
+    public bool isDead;
+
+    GameManager gameManager;
+
     private void Awake()
     {
         charCTRL = GetComponent<CharacterController>();
+        
     }
     // Start is called before the first frame update
     void Start()
     {
         canShoot = true;
+        isDead = false;
         anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
-
-        moveVelocity = new Vector3(moveInput.x * moveSpeed, 0, moveInput.y * moveSpeed);
-        moveDirection = new Vector3(moveInput.x, 0, moveInput.y);
-        moveVelocity.y += pGravity;
-
-        anim.SetFloat("MoveSpeed", moveDirection.magnitude, 0.075f, Time.deltaTime);
-
-        if (moveDirection != Vector3.zero)
+        if (!isDead)
         {
-            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothing);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            moveInput.x = Input.GetAxisRaw("Horizontal");
+            moveInput.y = Input.GetAxisRaw("Vertical");
+
+            moveVelocity = new Vector3(moveInput.x * moveSpeed, 0, moveInput.y * moveSpeed);
+            moveDirection = new Vector3(moveInput.x, 0, moveInput.y);
+            moveVelocity.y += pGravity;
+
+            anim.SetFloat("MoveSpeed", moveDirection.magnitude, 0.075f, Time.deltaTime);
+
+            if (moveDirection != Vector3.zero)
+            {
+                float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothing);
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
 
+            }
+
+            charCTRL.Move(moveVelocity * Time.deltaTime);
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (canShoot & numberOfBullets > 0) StartCoroutine(PlayerShoot());
+            }
         }
+    }
 
-        charCTRL.Move(moveVelocity * Time.deltaTime);
+    public void PlayerDeath()
+    {
+        isDead = true;
+        //anim.SetTrigger("Death");
+        StartCoroutine(SwitchScene());
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (canShoot & numberOfBullets > 0) StartCoroutine(PlayerShoot());
-        }
+    IEnumerator PlayerShoot()
+    {
+        Rigidbody playerBullet;
+        playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
+        playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
+        canShoot = false;
+        numberOfBullets--;
+        yield return new WaitForSeconds(0.5f);
+        canShoot = true;
+    }
 
-        IEnumerator PlayerShoot()
-        {
-            Rigidbody playerBullet;
-            playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
-            playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
-            canShoot = false;
-            numberOfBullets--;
-            yield return new WaitForSeconds(0.5f);
-            canShoot = true;
-        }
+    IEnumerator SwitchScene()
+    {
+        yield return new WaitForSeconds(.1f);
+        gameManager.SwitchScene(20);
     }
 }
