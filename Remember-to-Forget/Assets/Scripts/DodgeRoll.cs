@@ -16,40 +16,37 @@ public class DodgeRoll : MonoBehaviour
     private float ActCooldown;
 
     public float PushAmt = 3;
+    bool Roll;
 
     void Start()
     {
         Hp = GetComponent<Health>();
         charCTRL = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
+        Roll = false;
     }
 
     void Update()
     {
-        bool Roll = Input.GetButtonDown("Fire2");
-
-        if(ActCooldown <= 0)
-        {
-            anim.ResetTrigger("Roll");
-            if(Roll)
-            {
-                Dodge();
-            }
-        }
-        else
-        {
-            ActCooldown -= Time.deltaTime;
-        }
+        if (Input.GetButtonDown("Fire2") && !Roll) Dodge();
     }
 
     void Dodge()
     {
         ActCooldown = DodgeCoolDown;
-        Hp.Invinsible(DelayBeforeInvinsible, InvinsibleDuration);
+        //Hp.Invinsible(DelayBeforeInvinsible, InvinsibleDuration);
 
         //charCTRL.AddForce(transform.forward * PushAmt, ForceMode.Force);
 
         anim.SetTrigger("Roll");
+        StartCoroutine(CanRoll());
+    }
+
+    IEnumerator CanRoll()
+    {
+        Roll = true;    
+        yield return new WaitForSeconds(1);
+        Roll = false;
     }
 
 }

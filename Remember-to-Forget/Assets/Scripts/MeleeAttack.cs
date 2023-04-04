@@ -9,7 +9,7 @@ public class MeleeAttack : MonoBehaviour
     private float nextFireTime = 0f;
     public static int noOfClicks = 0;
     float lastClickedTime = 0;
-    float maxComboDelay = 1;
+    float maxComboDelay = .1f;
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class MeleeAttack : MonoBehaviour
         {
             anim.SetBool("hit1", false);
         }
-        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit2"))
+        /*if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit2"))
         {
             anim.SetBool("hit2", false);
         }
@@ -30,7 +30,7 @@ public class MeleeAttack : MonoBehaviour
         {
             anim.SetBool("hit3", false);
             noOfClicks = 0;
-        }
+        }*/
 
 
         if (Time.time - lastClickedTime > maxComboDelay)
