@@ -21,6 +21,12 @@ public class Player_Health : MonoBehaviour
             if (!playerCTRL.isDead)
             {
                 playerHealth--;
+
+                if (playerHealth <= 0)
+                {
+                    playerCTRL.PlayerDeath();
+                }
+                else playerCTRL.PlayerHurt();
             }
 
         }

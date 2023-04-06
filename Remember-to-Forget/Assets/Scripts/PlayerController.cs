@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    
+
     public float moveSpeed = 7;
     public float turnSpeed = 0.2f;
     public float turnSmoothing = 0.15f;
     float turnSmoothVelocity;
     public float pGravity = -20f;
+    public float playerHurtTime = 0;
 
     private Animator anim;
 
@@ -30,7 +33,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         charCTRL = GetComponent<CharacterController>();
-        
+
     }
     // Start is called before the first frame update
     void Start()
@@ -70,12 +73,14 @@ public class PlayerController : MonoBehaviour
                 if (canShoot & numberOfBullets > 0) StartCoroutine(PlayerShoot());
             }
         }
+        playerHurtTime -= Time.deltaTime;
+        if (playerHurtTime < 0) playerHurtTime = 0;
     }
 
     public void PlayerDeath()
     {
         isDead = true;
-        //anim.SetTrigger("Death");
+        anim.SetTrigger("Death");
         StartCoroutine(SwitchScene());
     }
 
@@ -94,5 +99,11 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(.1f);
         gameManager.SwitchScene(20);
+    }
+    
+    public void PlayerHurt()
+    {
+        playerHurtTime = 0.75f;
+        anim.SetTrigger("Hurt");
     }
 }
