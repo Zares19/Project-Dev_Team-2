@@ -70,11 +70,15 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (canShoot & numberOfBullets > 0) StartCoroutine(PlayerShoot());
+                if (canShoot & numberOfBullets > 0)
+                {
+                    anim.SetTrigger("Shoot");
+                    StartCoroutine(PlayerShoot());
+                }
             }
         }
         playerHurtTime -= Time.deltaTime;
-        if (playerHurtTime < 0) playerHurtTime = 0;
+        if (playerHurtTime < 0); playerHurtTime = 0;
     }
 
     public void PlayerDeath()
