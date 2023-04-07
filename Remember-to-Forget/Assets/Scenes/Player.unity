@@ -574,12 +574,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.63
-  m_Radius: 0.5
+  m_Radius: 0.23
   m_SlopeLimit: 80
   m_StepOffset: 1.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -0.02, z: 0}
+  m_Center: {x: 0, y: -0.11, z: -0.06}
 --- !u!114 &370105172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd51d46826baab2418fdb58465979ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 5
+  playerHealth: 20
 --- !u!1 &392693936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317.62823, y: 178.42}
+  m_AnchoredPosition: {x: -295, y: 178.42}
   m_SizeDelta: {x: 301.9435, y: 58.7592}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175084594

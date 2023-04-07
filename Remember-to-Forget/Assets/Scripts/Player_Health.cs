@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player_Health : MonoBehaviour
 {
-    [SerializeField] public int playerHealth = 5;
+    [SerializeField] public int playerHealth = 20;
     PlayerController playerCTRL;
 
     // Start is called before the first frame update
