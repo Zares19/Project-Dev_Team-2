@@ -51,9 +51,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290229521921236705, guid: 44d5c7ebda4d5b748ae55f594595b612, type: 3}
+      propertyPath: killTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6879066515723126899, guid: 44d5c7ebda4d5b748ae55f594595b612, type: 3}
       propertyPath: m_Name
-      value: Bullet
+      value: Bullet Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8511562575401257285, guid: 44d5c7ebda4d5b748ae55f594595b612, type: 3}
       propertyPath: m_Materials.Array.data[0]

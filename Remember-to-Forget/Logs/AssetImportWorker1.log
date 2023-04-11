@@ -15,7 +15,7 @@ C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62666
+59930
 Successfully changed project path to: C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember-to-Forget
 C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember-to-Forget
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 105.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 215.38 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,87 +63,87 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007937 seconds.
+Registered in 0.110071 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 73.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.731 seconds
+- Completed reload, in  5.441 seconds
 Domain Reload Profiling:
-	ReloadAssembly (732ms)
-		BeginReloadAssembly (148ms)
+	ReloadAssembly (5442ms)
+		BeginReloadAssembly (4692ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (464ms)
-			LoadAssemblies (143ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (107ms)
+		EndReloadAssembly (521ms)
+			LoadAssemblies (4685ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (103ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (265ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (331ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (57ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (142ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.019262 seconds.
+Registered in 0.108080 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 62.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.889 seconds
+- Completed reload, in  6.516 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1890ms)
-		BeginReloadAssembly (130ms)
+	ReloadAssembly (6517ms)
+		BeginReloadAssembly (159ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1579ms)
-			LoadAssemblies (495ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (6125ms)
+			LoadAssemblies (5206ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (299ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (651ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (567ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
-				BeforeProcessingInitializeOnLoad (156ms)
-				ProcessInitializeOnLoadAttributes (303ms)
-				ProcessInitializeOnLoadMethodAttributes (86ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (88ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4160 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 50 unused Assets / (0.8 MB). Loaded Objects now: 4618.
 Memory consumption went from 185.1 MB to 184.3 MB.
-Total: 5.365200 ms (FindLiveObjects: 0.792200 ms CreateObjectMapping: 0.217400 ms MarkObjects: 3.691400 ms  DeleteObjects: 0.660300 ms)
+Total: 7.449400 ms (FindLiveObjects: 0.891300 ms CreateObjectMapping: 0.809300 ms MarkObjects: 5.178700 ms  DeleteObjects: 0.566400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -158,28 +158,22 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2274704.422516 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PistolIdleToPistolAim.fbx
-  artifactKey: Guid(db425b0f76c10b04e9727fde87012252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PistolIdleToPistolAim.fbx using Guid(db425b0f76c10b04e9727fde87012252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014bc94109fd966275e88bd631460528') in 0.139849 seconds 
+  Time since last request: 2345273.308669 seconds.
+  path: Assets/Prefabs/Weapon_Skeleton_M1911A1_Full.fbx
+  artifactKey: Guid(2022fec1cfb9a0241bfe9b503158343e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon_Skeleton_M1911A1_Full.fbx using Guid(2022fec1cfb9a0241bfe9b503158343e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e80747d103bf2722571bf6c148e32f') in 0.713819 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeIdle.fbx
-  artifactKey: Guid(76c99846b1cafdb4895c2dbd988e0b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeIdle.fbx using Guid(76c99846b1cafdb4895c2dbd988e0b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca67936ccc442855fe0d9b344cbfc9e') in 0.044819 seconds 
+  Time since last request: 0.000145 seconds.
+  path: Assets/Prefabs/Weapon_Skeleton_M1911A1_Magazine_Empty.fbx
+  artifactKey: Guid(2d871ae82e3bd6544bf416e075427980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon_Skeleton_M1911A1_Magazine_Empty.fbx using Guid(2d871ae82e3bd6544bf416e075427980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffea1452260abc0941d49bcb54f8cd0') in 0.075666 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000084 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeAttack01.fbx
-  artifactKey: Guid(2da667600e090d042ad8fc64a65bb48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeAttack01.fbx using Guid(2da667600e090d042ad8fc64a65bb48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80a037a262930e97a91183aaa3dab11') in 0.047481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_EmptyDeath.fbx
-  artifactKey: Guid(118bbf4558b21e54490ecb0ee6d187c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyDeath.fbx using Guid(118bbf4558b21e54490ecb0ee6d187c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199f269d538f83331da498c1e6ce1bfe') in 0.051617 seconds 
+  path: Assets/Prefabs/Character_Animation_DanielReyes_TPOSE (5).fbx
+  artifactKey: Guid(cd70d53acb5879c42b8a3dc787b1ca17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Character_Animation_DanielReyes_TPOSE (5).fbx using Guid(cd70d53acb5879c42b8a3dc787b1ca17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd176672118184fce6340af1dc76259ad') in 0.332885 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
