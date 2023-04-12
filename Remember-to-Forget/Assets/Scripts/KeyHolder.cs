@@ -1,14 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPPro;
 
 public class KeyHolder : MonoBehaviour
 {
     private List<KeyScript.KeyType> keyList;
 
+    [SerializeField] public TMP_text keyText;
+    [SerializeField] public TMP_text doorText;
+
     private void Awake()
     {
         keyList = new List<KeyScript.KeyType>();
+    }
+
+    private void Start()
+    {
+        keyText.gameObject.SetActive(false);
+        doorText.gameObject.SetActive(false);
     }
 
     public void AddKey(KeyScript.KeyType keyType)
@@ -34,6 +45,8 @@ public class KeyHolder : MonoBehaviour
         {
             AddKey(key.GetKeyType());
             Destroy(key.gameObject);
+            keyText.gameObject.SetActive(true);
+            keyText.gameObject.SetActive(false);
         }
 
         KeyDoor keyDoor = other.GetComponent<KeyDoor>();
@@ -43,6 +56,28 @@ public class KeyHolder : MonoBehaviour
             {
                 RemoveKey(keyDoor.GetKeyType());
                 keyDoor.OpenDoor();
+            }
+
+            if (!ContainsKey(keyDoor.GetKeyType()))
+            {
+                doorText.gameObject.SetActive(true);
+            }
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        KeyScript key = other.GetComponent<KeyScript>();
+        if (key != null)
+        {
+            keyText.gameObject.SetActive(false);
+        }
+        KeyDoor keyDoor = other.GetComponent<KeyDoor>();
+        if (keyDoor != null)
+        {
+            if (!ContainsKey(keyDoor.GetKeyType()))
+            {
+                doorText.gameObject.SetActive(false);
             }
         }
     }
