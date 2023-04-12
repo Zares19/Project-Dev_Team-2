@@ -101,8 +101,8 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator SwitchScene()
     {
-        yield return new WaitForSeconds(.1f);
-        gameManager.SwitchScene(20);
+        yield return new WaitForSeconds(.5f);
+        gameManager.SwitchScene(18);
     }
     
     public void PlayerHurt()
