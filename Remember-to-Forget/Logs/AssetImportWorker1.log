@@ -15,7 +15,7 @@ C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51784
+57003
 Successfully changed project path to: C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember-to-Forget
 C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember-to-Forget
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 170.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 76.83 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,87 +63,119 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007301 seconds.
+Registered in 0.006405 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 69.26 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 64.87 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
+- Completed reload, in  0.760 seconds
 Domain Reload Profiling:
-	ReloadAssembly (826ms)
-		BeginReloadAssembly (135ms)
+	ReloadAssembly (761ms)
+		BeginReloadAssembly (203ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (557ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (139ms)
+		EndReloadAssembly (444ms)
+			LoadAssemblies (198ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (307ms)
+			SetupLoadedEditorAssemblies (262ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (69ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (165ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.021755 seconds.
+Registered in 0.008604 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 69.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.577 seconds
+- Completed reload, in  0.823 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1578ms)
-		BeginReloadAssembly (191ms)
+	ReloadAssembly (824ms)
+		BeginReloadAssembly (146ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1247ms)
-			LoadAssemblies (213ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (562ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (331ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (614ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (214ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (335ms)
-				ProcessInitializeOnLoadMethodAttributes (92ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+Failed to load shader (instanceID 9804, GUID 14eb328de4b8eb245bb7cea29e4ac00b)
+Failed to load shader (instanceID 9806, GUID 68e6db2ebdc24f95958faec2be5558d6)
+Failed to load shader (instanceID 9808, GUID fe393ace9b354375a9cb14cdbbc28be4)
+Failed to load shader (instanceID 9810, GUID 1cce61915faddf94b8d35a1f80969b02)
+Failed to load shader (instanceID 9812, GUID 03ebd34214b41ef459d7ee6753b062be)
+Failed to load shader (instanceID 9814, GUID 128e987d567d4e2c824d754223b3f3b0)
+Failed to load shader (instanceID 9816, GUID c8d12adcee749c344b8117cf7c7eb912)
+Failed to load shader (instanceID 9818, GUID 6d8be05a69d81144c88ad535cddbc868)
+Failed to load shader (instanceID 9820, GUID 56d52fd5b7c6911468179e5a7359ce0e)
+Failed to load shader (instanceID 9822, GUID d639c4c40bbfeb44fb7c7d9cbcd3a572)
+Failed to load shader (instanceID 9824, GUID bf2928017213de74c80eee2649082e99)
+Failed to load shader (instanceID 9826, GUID 9fe118684aa1f0247976a8d9cd733e38)
+Failed to load shader (instanceID 9828, GUID 120e3917a0013ab4180a378e2387509d)
+Failed to load shader (instanceID 9830, GUID 48bb5f55d8670e349b6e614913f9d910)
+Failed to load shader (instanceID 9832, GUID 85187c2149c549c5b33f0cdb02836b17)
+Failed to load shader (instanceID 9834, GUID 9181994163c66fe4589a653f9b74a0e6)
+Failed to load shader (instanceID 9836, GUID 364a79f75940cde409d6c07092dacd71)
+Failed to load shader (instanceID 9838, GUID 12779ca7a374ca24da44accca8f439a0)
+Failed to load shader (instanceID 9840, GUID 2ebed186567d3c244a87538744a62920)
+Failed to load shader (instanceID 9842, GUID bc1ede39bf3643ee8e493720e4259791)
+Failed to load shader (instanceID 9844, GUID d798d1968e2101f4993d8f166bdbc9bb)
+Failed to load shader (instanceID 9846, GUID cf81c85f95fe47e1a27f6ae460cf182c)
+Failed to load shader (instanceID 9848, GUID 9c442dc870b456e48b615cd8add0e9ef)
+Failed to load shader (instanceID 9850, GUID f7ada0af4f174f0694ca6a487b8f543d)
+Failed to load shader (instanceID 9852, GUID 35a500d816bc28c409f8ca20c3d0c93d)
+Failed to load shader (instanceID 9854, GUID b74de4bc361e610408cf0082d9d78be5)
+Failed to load shader (instanceID 9856, GUID dd89cf5b9246416f84610a006f916af7)
+Failed to load shader (instanceID 9858, GUID e4e5d566a8aa9914c906555a6857fcb9)
+Failed to load shader (instanceID 9860, GUID 1b37d1cf11328ee44a1de83f6c28fbe6)
+Failed to load shader (instanceID 9862, GUID a02a7d8c237544f1962732b55a9aebf1)
+Failed to load shader (instanceID 9864, GUID 1e3b057af24249748ff873be7fafee47)
+Failed to load shader (instanceID 9866, GUID 7df62e33d3d17584ab47e30a7e668103)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4160 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (0.8 MB). Loaded Objects now: 4619.
-Memory consumption went from 185.5 MB to 184.7 MB.
-Total: 6.359300 ms (FindLiveObjects: 0.777600 ms CreateObjectMapping: 0.278500 ms MarkObjects: 4.712100 ms  DeleteObjects: 0.588700 ms)
+Unloading 1743 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.7 MB). Loaded Objects now: 2209.
+Memory consumption went from 107.3 MB to 106.6 MB.
+Total: 3.622900 ms (FindLiveObjects: 0.255800 ms CreateObjectMapping: 0.042700 ms MarkObjects: 2.957400 ms  DeleteObjects: 0.365500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -156,9 +188,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2368868.736355 seconds.
-  path: Assets/Textures/Render_Texture.renderTexture
-  artifactKey: Guid(c6a2102d29c188b4e9a74ceff17d6934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Render_Texture.renderTexture using Guid(c6a2102d29c188b4e9a74ceff17d6934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbd9420d8549fb681b3ab03001ce137') in 0.126569 seconds 
