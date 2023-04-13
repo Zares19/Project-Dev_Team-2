@@ -53,7 +53,7 @@ public class KeyHolder : MonoBehaviour
         {
             if (ContainsKey(keyDoor.GetKeyType()))
             {
-                RemoveKey(keyDoor.GetKeyType());
+                //RemoveKey(keyDoor.GetKeyType());
                 keyDoor.OpenDoor();
                 doorText.gameObject.SetActive(false);
             }
