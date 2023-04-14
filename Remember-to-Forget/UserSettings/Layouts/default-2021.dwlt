@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -428,21 +428,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 44
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 44
   m_LastProjectPath: C:\Users\garre\OneDrive\Documents\Team 2_Project Dev\Project-Dev_Team-2\Remember-to-Forget
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 159}
-    m_SelectedIDs: 4a090100
-    m_LastClickedID: 67914
+    m_SelectedIDs: 48090100
+    m_LastClickedID: 67912
     m_ExpandedIDs: 000000003009010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -599,23 +599,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 56790000
+      m_SelectedIDs: 82090100
       m_LastClickedID: 0
-      m_ExpandedIDs: ba82feff188ffeff029bfeff0061ffff0a62ffff
+      m_ExpandedIDs: 08e7f1ffdcecf1ffdcb7f5fff8c1f5ffb2c3f5ffe0c7f5ff8ec9f5ff98c9f5ff3495f6ff88aef6ff5e4cf7ffaa7bf7ffba8bf8ffbe8bf8ff56f5f8ff58f9f8ff5af9f8ff3263f9ff147bf9ffb67cf9ff86e6f9ffc6e8f9ff9a52faffbc6afaff723dfbffd246fbff1416fcffd02efcffe02ffcffee3cfcffd848fcff1a33fdff2a4cfdff9c12feff9e20feff882cfeffa65fffff0a62ffff88b20200847a0400aa7a0400082b05004c8305007283050092d705002e3c0600faf307005ead08007aad0800d0790b00ee790b00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: F1 HALLWAYS (1)
+        m_OriginalName: F1 HALLWAYS (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 568628
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -850,9 +850,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -12.948436, y: 0.3163356, z: 10.515091}
+    m_Target: {x: 20.514854, y: -80.79253, z: -55.073788}
     speed: 2
-    m_Value: {x: -12.948436, y: 0.3163356, z: 10.515091}
+    m_Value: {x: 20.514854, y: -80.79253, z: -55.073788}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -899,13 +899,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.20015389, y: -0.46691027, z: 0.09710452, w: -0.85677934}
+    m_Target: {x: 0.066695325, y: 0.8726669, z: -0.4738287, w: 0.10581982}
     speed: 2
-    m_Value: {x: -0.19999728, y: -0.46654493, z: 0.09702854, w: -0.8561089}
+    m_Value: {x: 0.06663846, y: 0.8719229, z: -0.47342473, w: 0.1057296}
   m_Size:
-    m_Target: 6.5353336
+    m_Target: 52.42236
     speed: 2
-    m_Value: 6.5353336
+    m_Value: 52.42236
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -923,7 +923,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 0
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.114846826, y: 0.80329627, z: -0.5621665, w: -0.16103673}
+  m_LastSceneViewRotation: {x: -0.1902084, y: -0.8010809, z: 0.48820195, w: -0.2921076}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
