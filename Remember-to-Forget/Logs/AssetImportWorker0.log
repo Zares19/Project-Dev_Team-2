@@ -15,7 +15,7 @@ C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65213
+59925
 Successfully changed project path to: C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember-to-Forget
 C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember-to-Forget
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/garre/OneDrive/Documents/Team 2_Project Dev/Project-Dev_Team-2/Remember
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 76.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 200.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,87 +63,87 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008505 seconds.
+Registered in 0.008920 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 66.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 66.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.749 seconds
+- Completed reload, in  0.875 seconds
 Domain Reload Profiling:
-	ReloadAssembly (750ms)
-		BeginReloadAssembly (129ms)
+	ReloadAssembly (875ms)
+		BeginReloadAssembly (155ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (498ms)
-			LoadAssemblies (127ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (110ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (581ms)
+			LoadAssemblies (151ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (112ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (294ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (374ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (67ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
+				ProcessInitializeOnLoadAttributes (243ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018742 seconds.
+Registered in 0.015822 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 66.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.405 seconds
+- Completed reload, in  1.643 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2406ms)
-		BeginReloadAssembly (179ms)
+	ReloadAssembly (1643ms)
+		BeginReloadAssembly (158ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (2061ms)
-			LoadAssemblies (1021ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1236ms)
+			LoadAssemblies (214ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (689ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (682ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (402ms)
-				ProcessInitializeOnLoadMethodAttributes (107ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (419ms)
+				ProcessInitializeOnLoadMethodAttributes (94ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.26 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4163 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (0.8 MB). Loaded Objects now: 4621.
+Unloading 4164 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (0.8 MB). Loaded Objects now: 4622.
 Memory consumption went from 185.2 MB to 184.4 MB.
-Total: 9.315900 ms (FindLiveObjects: 0.834400 ms CreateObjectMapping: 0.971800 ms MarkObjects: 6.716400 ms  DeleteObjects: 0.790500 ms)
+Total: 6.377400 ms (FindLiveObjects: 0.545100 ms CreateObjectMapping: 0.493500 ms MarkObjects: 4.903200 ms  DeleteObjects: 0.434000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -158,173 +158,67 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2695879.862727 seconds.
-  path: Assets/Scripts/Player_Health.cs
-  artifactKey: Guid(cd51d46826baab2418fdb58465979ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player_Health.cs using Guid(cd51d46826baab2418fdb58465979ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2f0b599556c00223773febd5f8a5ef') in 0.095169 seconds 
+  Time since last request: 2789440.978357 seconds.
+  path: Assets/Prefabs/new_stairs01.fbx
+  artifactKey: Guid(99e96c1c04ac1fd4e82f00c703d4e0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new_stairs01.fbx using Guid(99e96c1c04ac1fd4e82f00c703d4e0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce2e4ca1acf33fe015d7b9928f36dea') in 0.654302 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 255.340463 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(ccc0118964d66fd41b7ccbfef5eff0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(ccc0118964d66fd41b7ccbfef5eff0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b781a422b940e81b6c3cc41152eec7bc') in 0.029041 seconds 
+  Time since last request: 0.000082 seconds.
+  path: Assets/Prefabs/Bullet.prefab
+  artifactKey: Guid(44d5c7ebda4d5b748ae55f594595b612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bullet.prefab using Guid(44d5c7ebda4d5b748ae55f594595b612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188101204114ead3517198d7800d8e8b') in 0.210499 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.742051 seconds.
-  path: Assets/Scripts/CharacterController.cs
-  artifactKey: Guid(c11476dfa3e8bd24cac1373b5a5e05bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CharacterController.cs using Guid(c11476dfa3e8bd24cac1373b5a5e05bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d98547a31c8fa5b81a5bf520641d26') in 0.013858 seconds 
+  Time since last request: 0.000116 seconds.
+  path: Assets/Prefabs/ScissorsKid_TPose.fbx
+  artifactKey: Guid(bdd6e68cb52585249ad00ebc2a7769cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScissorsKid_TPose.fbx using Guid(bdd6e68cb52585249ad00ebc2a7769cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5168787af01c921960aafbd7597fad2') in 0.588633 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 911.825133 seconds.
-  path: Assets/Animations/Player_CTRL.controller
-  artifactKey: Guid(957ea2e51f98b2a4781e72be883e3847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Player_CTRL.controller using Guid(957ea2e51f98b2a4781e72be883e3847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe894fc0894769371a25c943834cd4c') in 0.480181 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 163.791446 seconds.
-  path: Assets/Scripts/MeleeAttack.cs
-  artifactKey: Guid(a137d94230fcd1946966ad063e95171a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MeleeAttack.cs using Guid(a137d94230fcd1946966ad063e95171a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08b2689df278bc41c3102ee987d182c') in 0.008193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 210.076496 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_EmptyDeath.fbx
-  artifactKey: Guid(118bbf4558b21e54490ecb0ee6d187c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyDeath.fbx using Guid(118bbf4558b21e54490ecb0ee6d187c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199f269d538f83331da498c1e6ce1bfe') in 0.298256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeDodgeRoll.fbx
-  artifactKey: Guid(b1d0491c4caf63e48a341d9950f90b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeDodgeRoll.fbx using Guid(b1d0491c4caf63e48a341d9950f90b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154699e6f153a93f05a9adc89648bc8c') in 0.040087 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_EmptyWalk (2).fbx
-  artifactKey: Guid(56117730c48febc4d88a2983b7c0e768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyWalk (2).fbx using Guid(56117730c48febc4d88a2983b7c0e768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605ae9e00ac0fed15a8fd85fa86c65d9') in 0.048180 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeDeath.fbx
-  artifactKey: Guid(a517bb04cbc94fd43bff6eaebb9de145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeDeath.fbx using Guid(a517bb04cbc94fd43bff6eaebb9de145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a38173bf8b32e4f0f814a784952f6c4') in 0.042449 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PistolIdle.fbx
-  artifactKey: Guid(afcdf4b37c2ab884385b47e1bea8aff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PistolIdle.fbx using Guid(afcdf4b37c2ab884385b47e1bea8aff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0912f269a53d6fbcf9e10992d0ace2') in 0.046912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PistolIdleToPistolAim.fbx
-  artifactKey: Guid(db425b0f76c10b04e9727fde87012252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PistolIdleToPistolAim.fbx using Guid(db425b0f76c10b04e9727fde87012252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014bc94109fd966275e88bd631460528') in 0.043454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeIdle.fbx
-  artifactKey: Guid(76c99846b1cafdb4895c2dbd988e0b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeIdle.fbx using Guid(76c99846b1cafdb4895c2dbd988e0b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca67936ccc442855fe0d9b344cbfc9e') in 0.031248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000089 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_EmptyIdle (2).fbx
-  artifactKey: Guid(374d7256ade733b47b0e6e0532a98b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyIdle (2).fbx using Guid(374d7256ade733b47b0e6e0532a98b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7abc2bc2b05974028e1a4b14f1326a') in 0.030943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeAim.fbx
-  artifactKey: Guid(bfc2f7aa088dd72449877821c04f57eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeAim.fbx using Guid(bfc2f7aa088dd72449877821c04f57eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92dc7386c8a50fe440d28dbc968269a0') in 0.030270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeWalk.fbx
-  artifactKey: Guid(df444fa45cc0de744a6a8e770c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeWalk.fbx using Guid(df444fa45cc0de744a6a8e770c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0558bae84790b893b6e39f9ec9905742') in 0.040008 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PistolReloading.fbx
-  artifactKey: Guid(cc4e14a5fac399a4fa9f913ea950c063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PistolReloading.fbx using Guid(cc4e14a5fac399a4fa9f913ea950c063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296eb5cc87a8fde80dabaa72692f1143') in 0.028257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_EmptyHit (2).fbx
-  artifactKey: Guid(bf4d2325e70496241afc4e24986bfaf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyHit (2).fbx using Guid(bf4d2325e70496241afc4e24986bfaf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4e532d4c3e353cf9dea8735bc25044') in 0.036176 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_EmptyDodgerRoll (2).fbx
-  artifactKey: Guid(586195fdf3ab5ba4ab17fcbe9515fafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyDodgerRoll (2).fbx using Guid(586195fdf3ab5ba4ab17fcbe9515fafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c9a6f3e459477cd6153f594322ffa9') in 0.032688 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeAttack01.fbx
-  artifactKey: Guid(2da667600e090d042ad8fc64a65bb48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeAttack01.fbx using Guid(2da667600e090d042ad8fc64a65bb48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80a037a262930e97a91183aaa3dab11') in 0.038369 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PistolFire.fbx
-  artifactKey: Guid(ca3bc55f957a62e47807867303aa6b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PistolFire.fbx using Guid(ca3bc55f957a62e47807867303aa6b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55d9255c32f8746304130f608e82755') in 0.024669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeRun.fbx
-  artifactKey: Guid(e13543820cdb54d4c907aa45da94f26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeRun.fbx using Guid(e13543820cdb54d4c907aa45da94f26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a166bb4783d2d42de78c002f6fc758fd') in 0.050641 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Animations/Character_Animation_DanielReyes_PipeHit.fbx
-  artifactKey: Guid(0f908930f0f417e4992c30dc56465a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character_Animation_DanielReyes_PipeHit.fbx using Guid(0f908930f0f417e4992c30dc56465a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0047205ba67a0291bfe0ca96668415') in 0.049582 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.873591 seconds.
-  path: Assets/Animations
-  artifactKey: Guid(abf17b21af516534dbe688da18050c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations using Guid(abf17b21af516534dbe688da18050c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d502414ba5c8e3f92876c426b00f0ec') in 0.009434 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.273316 seconds.
-  path: Assets/Prefabs/Bullet Variant.prefab
-  artifactKey: Guid(551d90fa7d0b8134d9bbfc80d2cc6298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Bullet Variant.prefab using Guid(551d90fa7d0b8134d9bbfc80d2cc6298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c127744a3c2c849df9421bd2c9190b') in 0.479820 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Prefabs/Character_Animation_DanielReyes_TPOSE (3).fbx
-  artifactKey: Guid(03b3c564d36b1724da2d571e0fb09a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Character_Animation_DanielReyes_TPOSE (3).fbx using Guid(03b3c564d36b1724da2d571e0fb09a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0717721cff599bc98d488c4313c747e1') in 0.458979 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Prefabs/Weapon_Skeleton_M1911A1_Magazine_Empty.fbx
-  artifactKey: Guid(2d871ae82e3bd6544bf416e075427980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon_Skeleton_M1911A1_Magazine_Empty.fbx using Guid(2d871ae82e3bd6544bf416e075427980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffea1452260abc0941d49bcb54f8cd0') in 0.079725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Prefabs/Temp_Key.prefab
-  artifactKey: Guid(d16752bdce5ec6741a0fb1ffdc993a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Temp_Key.prefab using Guid(d16752bdce5ec6741a0fb1ffdc993a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe0470f2361f2db1a5abd169dae4375') in 0.042399 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
+  Time since last request: 0.000048 seconds.
   path: Assets/Prefabs/Character_Animation_DanielReyes_TPOSE (5).fbx
   artifactKey: Guid(cd70d53acb5879c42b8a3dc787b1ca17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Character_Animation_DanielReyes_TPOSE (5).fbx using Guid(cd70d53acb5879c42b8a3dc787b1ca17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd176672118184fce6340af1dc76259ad') in 0.106337 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Start importing Assets/Prefabs/Character_Animation_DanielReyes_TPOSE (5).fbx using Guid(cd70d53acb5879c42b8a3dc787b1ca17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd176672118184fce6340af1dc76259ad') in 0.128851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.199678 seconds.
+  path: Assets/Animations/Character_Animation_DanielReyes_EmptyDodgerRoll (1).fbx
+  artifactKey: Guid(f3560bc0af5c29e4cae9e70913cc83be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyDodgerRoll (1).fbx using Guid(f3560bc0af5c29e4cae9e70913cc83be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d613c34cbac993f27225c5b593fb1da') in 0.041680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Animations/Character_Animation_DanielReyes_EmptyWalk (2).fbx
+  artifactKey: Guid(56117730c48febc4d88a2983b7c0e768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyWalk (2).fbx using Guid(56117730c48febc4d88a2983b7c0e768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605ae9e00ac0fed15a8fd85fa86c65d9') in 0.041606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Animations/Character_Animation_DanielReyes_PistolIdle.fbx
+  artifactKey: Guid(afcdf4b37c2ab884385b47e1bea8aff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character_Animation_DanielReyes_PistolIdle.fbx using Guid(afcdf4b37c2ab884385b47e1bea8aff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0912f269a53d6fbcf9e10992d0ace2') in 0.050113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Animations/Character_Animation_DanielReyes_EmptyIdle (2).fbx
+  artifactKey: Guid(374d7256ade733b47b0e6e0532a98b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character_Animation_DanielReyes_EmptyIdle (2).fbx using Guid(374d7256ade733b47b0e6e0532a98b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7abc2bc2b05974028e1a4b14f1326a') in 0.052128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Animations/Character_Animation_DanielReyes_PipeWalk.fbx
+  artifactKey: Guid(df444fa45cc0de744a6a8e770c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character_Animation_DanielReyes_PipeWalk.fbx using Guid(df444fa45cc0de744a6a8e770c87e51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0558bae84790b893b6e39f9ec9905742') in 0.044281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Animations/Character_Animation_DanielReyes_PipeAttack01.fbx
+  artifactKey: Guid(2da667600e090d042ad8fc64a65bb48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character_Animation_DanielReyes_PipeAttack01.fbx using Guid(2da667600e090d042ad8fc64a65bb48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80a037a262930e97a91183aaa3dab11') in 0.050364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Animations/Character_Animation_DanielReyes_PistolPistolAimToIdle.fbx
+  artifactKey: Guid(6cf538c67053f1b4da36100d02f612fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character_Animation_DanielReyes_PistolPistolAimToIdle.fbx using Guid(6cf538c67053f1b4da36100d02f612fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adcb4795b6cb2cab1d679f665c1dc7af') in 0.055859 seconds 
