@@ -59,9 +59,13 @@ public class EnemyScript : MonoBehaviour
     {
         if (!walkPointSet) SearchWalkPoint();
 
-        if (walkPointSet) navAgent.SetDestination(walkPoint);
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-        if (distanceToWalkPoint.magnitude < 1f) walkPointSet = false;
+        if (walkPointSet) navAgent.SetDestination(walkPoint); 
+            Vector3 distanceToWalkPoint = transform.position - walkPoint;
+        if (distanceToWalkPoint.magnitude < 1f)
+        {
+            _anim.SetTrigger("Patroling");
+            walkPointSet = false;
+        }
     }
 
     void SearchWalkPoint()
@@ -76,6 +80,7 @@ public class EnemyScript : MonoBehaviour
     
     void ChasePlayer()
     {
+        _anim.SetTrigger("Chasing");
         navAgent.SetDestination(_player.position);
     }
 
@@ -88,7 +93,7 @@ public class EnemyScript : MonoBehaviour
         {
             if(meleeEnemy)
             {
-                //_anim.SetTrigger("Attack");
+                _anim.SetTrigger("Attack");
                 StartCoroutine(MeleeAttackHit());
 
             }

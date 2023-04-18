@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     
 
-    public float moveSpeed = 7;
+    public float moveSpeed = 5;
     public float turnSpeed = 0.2f;
     public float turnSmoothing = 0.15f;
     float turnSmoothVelocity;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public bool canShoot;
     public Rigidbody smallShot;
     public Transform bulletSpawnPoint;
-    public float bulletSpeed = 20;
+    public float bulletSpeed = 2000;
     public int numberOfBullets = 10;
 
     public bool isDead;
