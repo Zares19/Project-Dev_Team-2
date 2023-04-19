@@ -249,7 +249,7 @@ public class ControllerCharacter : MonoBehaviour
     IEnumerator SwitchScene()
     {
         yield return new WaitForSeconds(.5f);
-        gameManager.SwitchScene(18);
+        gameManager.SwitchScene(3);
     }
 
 }

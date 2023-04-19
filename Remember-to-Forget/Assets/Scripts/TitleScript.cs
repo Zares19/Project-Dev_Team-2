@@ -25,7 +25,7 @@ public class TitleScript : MonoBehaviour
 
     public void GoToNewScene()
     {
-        SceneManager.LoadScene("Player");
+        SceneManager.LoadScene("Game");
     }
 
     public void QuitGame()
