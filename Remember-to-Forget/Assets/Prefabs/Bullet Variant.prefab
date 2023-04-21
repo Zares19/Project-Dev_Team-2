@@ -60,6 +60,10 @@ PrefabInstance:
       value: Bullet Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8511562575401257285, guid: 44d5c7ebda4d5b748ae55f594595b612, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511562575401257285, guid: 44d5c7ebda4d5b748ae55f594595b612, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6de30110a25b84944ae33857adf78b9f, type: 2}

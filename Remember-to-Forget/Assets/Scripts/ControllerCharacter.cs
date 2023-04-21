@@ -19,8 +19,6 @@ public class ControllerCharacter : MonoBehaviour
     public bool isRunning;
     public bool isDashing;
     public bool isAttacking;
-    public bool canInteract;
-    public bool isCarrying;
     public bool isDead;
 
     public bool canShoot;
@@ -31,11 +29,7 @@ public class ControllerCharacter : MonoBehaviour
 
     GameManager gameManager;
     CharacterController charCTRL;
-    //HunterAttack hunterAttack;
     Animator anim;
-    public Transform checkRayHit;
-    [SerializeField] GameObject pickedUpItem;
-    public Transform itemSocket;
     Vector2 moveInput;
     Vector3 moveVelocity;
     Vector3 turnVelocity;
@@ -49,7 +43,6 @@ public class ControllerCharacter : MonoBehaviour
         isDead = false;
         charCTRL = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
-        //hunterAttack = GetComponent<HunterAttack>();
     }
 
     // Start is called before the first frame update
@@ -95,45 +88,17 @@ public class ControllerCharacter : MonoBehaviour
         playerHurtTime -= Time.deltaTime;
         if (playerHurtTime < 0) ; playerHurtTime = 0;
 
-        CheckInteractive();
+      
 
-        if (Input.GetButtonDown("Fire2") && !isDashing)
+        if (Input.GetMouseButtonDown(1))
         {
+            Debug.Log("Pressing Dodge button");
             StartCoroutine(PlayerDash());
         }
 
         if (!isDead && !isAttacking)
         {
-            if (isCarrying) StartCoroutine(ObjectThrow());
-            else
-            {
-                if (canInteract) StartCoroutine(ObjectHandle());
-                else
-                {
-                    if (weaponSelect == 1)
-                    {
-                        anim.SetBool("hit1", true);
-                        //hunterAttack.StartMachete();
-                    }
-                    if (weaponSelect == 2)
-                    {
-                        anim.SetTrigger("Shoot");
-                        //hunterAttack.StartSpear();
-                    }
-                    /*if (weaponSelect == 3)
-                    {
-                        anim.SetTrigger("Hammer");
-                        hunterAttack.StartHammer();
-                    }
-                    if (weaponSelect == 4)
-                    {
-                        anim.SetTrigger("BlowGun");
-                        hunterAttack.StartBlowgun();
-                    }*/
-
-                   isAttacking = true;
-                }
-            }
+            
 
         }
     }
@@ -156,83 +121,6 @@ public class ControllerCharacter : MonoBehaviour
             yield return null;
         }
         isDashing = false;
-    }
-
-    void CheckInteractive()
-    {
-        RaycastHit checkRay;
-        Vector3 checkforward = transform.TransformDirection(Vector3.forward) * 0.3f;
-
-        if (Physics.Raycast(checkRayHit.transform.position, transform.TransformDirection(Vector3.forward), out checkRay, 0.3f))
-        {
-            if (checkRay.collider.gameObject.tag == "PickUp")
-            {
-                canInteract = true;
-                pickedUpItem = checkRay.collider.gameObject;
-                Debug.Log("Interactable");
-            }
-        }
-        else
-        {
-            canInteract = false;
-            //pickedUpItem = null;
-        }
-        Debug.DrawRay(checkRayHit.transform.position, checkforward, Color.green);
-    }
-
-    IEnumerator ObjectHandle()
-    {
-        moveInput = Vector3.zero;
-
-        if (!isCarrying)
-        {
-            Debug.Log("Picked Up Item");
-            Rigidbody itemRB = pickedUpItem.GetComponent<Rigidbody>();
-            anim.SetTrigger("PickUp");
-            isAttacking = true;
-            yield return new WaitForSeconds(0.2f);
-            itemRB.constraints = RigidbodyConstraints.FreezeAll;
-            itemRB.mass = 0.001f;
-            itemRB.useGravity = false;
-            isAttacking = false;
-            pickedUpItem.transform.SetParent(itemSocket);
-            isCarrying = true;
-        }
-        else
-        {
-            Debug.Log("Dropped Item");
-            Rigidbody itemRB = pickedUpItem.GetComponent<Rigidbody>();
-            anim.SetTrigger("PutDown");
-            isAttacking = true;
-            yield return new WaitForSeconds(0.2f);
-            itemRB.useGravity = true;
-            itemRB.mass = 1f;
-            itemRB.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotation;
-            pickedUpItem.transform.SetParent(null);
-            isAttacking = false;
-            isCarrying = false;
-        }
-
-    }
-
-    IEnumerator ObjectThrow()
-    {
-        moveInput = Vector3.zero;
-        isAttacking = true;
-        Rigidbody itemRB = pickedUpItem.GetComponent<Rigidbody>();
-        anim.SetTrigger("Throw");
-
-        yield return new WaitForSeconds(0.15f);
-
-        itemRB.useGravity = true;
-        itemRB.mass = 1f;
-        itemRB.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotation;
-        pickedUpItem.transform.SetParent(null);
-        itemRB.AddForce(checkRayHit.forward * 10f, ForceMode.Impulse);
-        itemRB.AddForce(checkRayHit.up * 5f, ForceMode.Impulse);
-        yield return new WaitForSeconds(0.4f);
-        isAttacking = false;
-        isCarrying = false;
     }
 
     IEnumerator PlayerShoot()
