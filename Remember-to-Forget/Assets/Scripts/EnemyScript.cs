@@ -28,6 +28,12 @@ public class EnemyScript : MonoBehaviour
     public float timeBetweenAttacks;
     bool isAttacking;
 
+    //Dying
+    public bool isDead;
+
+    //Getting Hurt
+    public float enemyHurtTime = 0;
+
 
     //States
     public float sightRange, attackRange;
@@ -41,6 +47,7 @@ public class EnemyScript : MonoBehaviour
         _anim = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
         meleeHitBox.SetActive(false);
+        isDead = false;
     }
 
     private void Update()
@@ -49,10 +56,12 @@ public class EnemyScript : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patrolling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInSightRange && playerInAttackRange) AttackPlayer();
+        if (!playerInSightRange && !playerInAttackRange && !isDead) Patrolling();
+        if (playerInSightRange && !playerInAttackRange && !isDead) ChasePlayer();
+        if (playerInSightRange && playerInAttackRange && !isDead) AttackPlayer();
 
+        enemyHurtTime -= Time.deltaTime;
+        if (enemyHurtTime < 0) ; enemyHurtTime = 0;
     }
 
     void Patrolling()
@@ -131,5 +140,17 @@ public class EnemyScript : MonoBehaviour
         Vector3 lungeTarget = _player.position;
         yield return new WaitForSeconds(0.2f);
         transform.DOJump(lungeTarget, 2.25f, 1, 0.5f);
+    }
+
+    public void EnemyDeath()
+    {
+        isDead = true;
+        _anim.SetTrigger("Death");
+    }
+
+    public void EnemyHurt()
+    {
+        enemyHurtTime = 0.75f;
+        _anim.SetTrigger("Hurt");
     }
 }

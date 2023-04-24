@@ -16,10 +16,12 @@ public class KillScript : MonoBehaviour
     private void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "Enviroment") Destroy(gameObject);
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enviroment") Destroy(gameObject);
+        if (other.gameObject.tag == "Enemy") Destroy(gameObject);
     }
 }

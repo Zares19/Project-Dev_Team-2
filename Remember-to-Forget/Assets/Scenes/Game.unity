@@ -773,7 +773,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.1
-  m_Speed: 5.5
+  m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 360
@@ -812,10 +812,39 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 3
   timeBetweenAttacks: 2
+  isDead: 0
+  enemyHurtTime: 0
   sightRange: 6
   attackRange: 0.7
   playerInSightRange: 0
   playerInAttackRange: 0
+--- !u!114 &497867312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497867307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aad468fc1d44c84b9a31021ecdd62fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 5
+--- !u!136 &497867313
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497867307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.16
+  m_Height: 1.2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.66, z: 0}
 --- !u!1 &520977314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,17 +1430,12 @@ MonoBehaviour:
   isRunning: 0
   isDashing: 0
   isAttacking: 0
-  canInteract: 0
-  isCarrying: 0
   isDead: 0
   canShoot: 0
   smallShot: {fileID: 8961517207792283207, guid: 551d90fa7d0b8134d9bbfc80d2cc6298, type: 3}
   bulletSpawnPoint: {fileID: 1226618673}
   bulletSpeed: 2000
   numberOfBullets: 10
-  checkRayHit: {fileID: 0}
-  pickedUpItem: {fileID: 0}
-  itemSocket: {fileID: 0}
   moveDirection: {x: 0, y: 0, z: 0}
   turnSmoothVelocity: 0
 --- !u!114 &891038249

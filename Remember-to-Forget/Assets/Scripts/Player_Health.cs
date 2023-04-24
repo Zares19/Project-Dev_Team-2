@@ -6,27 +6,27 @@ using UnityEngine.UI;
 public class Player_Health : MonoBehaviour
 {
     [SerializeField] public int playerHealth = 10;
-    PlayerController playerCTRL;
+    ControllerCharacter controller;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerCTRL = GetComponent<PlayerController>();
+        controller = GetComponent<ControllerCharacter>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if ((other.gameObject.tag == "Enemy") || other.gameObject.tag == "Enemy_Projectile")
         {
-            if (!playerCTRL.isDead)
+            if (!controller.isDead)
             {
                 playerHealth--;
 
                 if (playerHealth <= 0)
                 {
-                    playerCTRL.PlayerDeath();
+                    controller.PlayerDeath();
                 }
-                else playerCTRL.PlayerHurt();
+                else controller.PlayerHurt();
             }
 
         }

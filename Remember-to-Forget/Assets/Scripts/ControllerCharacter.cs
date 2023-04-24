@@ -140,5 +140,11 @@ public class ControllerCharacter : MonoBehaviour
         gameManager.SwitchScene(3);
     }
 
+    public void PlayerHurt()
+    {
+        playerHurtTime = 0.75f;
+        anim.SetTrigger("Hurt");
+    }
+
 }
 
