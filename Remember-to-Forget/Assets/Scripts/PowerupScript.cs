@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PowerupScript : MonoBehaviour
 {
-    PlayerController pCTRL;
+    ControllerCharacter controller;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        pCTRL = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        controller = GameObject.FindGameObjectWithTag("Player").GetComponent<ControllerCharacter>();
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class PowerupScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            pCTRL.numberOfBullets = 10;
+            controller.numberOfBullets = 10;
             Destroy(gameObject);
         }
     }

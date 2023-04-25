@@ -108,6 +108,7 @@ public class EnemyScript : MonoBehaviour
             }
             if(projectileEnemy)
             {
+                _anim.SetTrigger("Spit");
                 Rigidbody _projectileRB;
                 _projectileRB = Instantiate(enemyProjectile, projectileSpawnPoint.position, projectileSpawnPoint.rotation) as Rigidbody;
                 _projectileRB.AddForce(projectileSpawnPoint.forward * 10f, ForceMode.Impulse);

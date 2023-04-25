@@ -16,7 +16,6 @@ public class ControllerCharacter : MonoBehaviour
     public float dashTime = 0.5f;
     [SerializeField] float turnSmoothing = 0.15f;
     [SerializeField] int weaponSelect = 1;
-    public bool isRunning;
     public bool isDashing;
     public bool isAttacking;
     public bool isDead;

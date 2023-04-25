@@ -23,5 +23,6 @@ public class KillScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Enviroment") Destroy(gameObject);
         if (other.gameObject.tag == "Enemy") Destroy(gameObject);
+        if (other.gameObject.tag == "Player") Destroy(gameObject);
     }
 }

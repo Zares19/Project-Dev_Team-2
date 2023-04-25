@@ -20,7 +20,7 @@ public class Player_Health : MonoBehaviour
         {
             if (!controller.isDead)
             {
-                playerHealth--;
+                playerHealth -= 2;
 
                 if (playerHealth <= 0)
                 {
