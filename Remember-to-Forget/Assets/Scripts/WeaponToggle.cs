@@ -58,7 +58,6 @@ public class WeaponToggle : MonoBehaviour
             if (_weapon == 1 && canMelee)
             {
                 Debug.Log("You are Meleeing");
-                _anim.SetBool("hit1", true);
                 StartCoroutine(MeleeAttack());
             }
             if (_weapon == 2 && canShoot && numberOfBullets > 0)
@@ -73,6 +72,7 @@ public class WeaponToggle : MonoBehaviour
     IEnumerator MeleeAttack()
     {
         canMelee = false;
+        _anim.SetTrigger("hit1");
         yield return new WaitForSeconds(meleeTime);
         canMelee = true;
     }
