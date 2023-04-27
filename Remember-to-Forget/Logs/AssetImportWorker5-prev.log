@@ -15,7 +15,7 @@ C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-58265
+58736
 Successfully changed project path to: C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
 C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 77.16 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 74.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,87 +63,87 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005776 seconds.
+Registered in 0.006931 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 68.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 71.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.738 seconds
+- Completed reload, in  0.777 seconds
 Domain Reload Profiling:
-	ReloadAssembly (739ms)
-		BeginReloadAssembly (82ms)
+	ReloadAssembly (778ms)
+		BeginReloadAssembly (86ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (520ms)
-			LoadAssemblies (80ms)
+		EndReloadAssembly (564ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (115ms)
+			SetupTypeCache (124ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (296ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (295ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (69ms)
+				RefreshPlugins (71ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (162ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008637 seconds.
+Registered in 0.009003 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 69.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 69.51 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.452 seconds
+- Completed reload, in  1.809 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1453ms)
-		BeginReloadAssembly (149ms)
+	ReloadAssembly (1809ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1154ms)
-			LoadAssemblies (99ms)
+		EndReloadAssembly (1531ms)
+			LoadAssemblies (118ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (275ms)
+			SetupTypeCache (400ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (654ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (895ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (70ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (368ms)
-				ProcessInitializeOnLoadMethodAttributes (99ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (497ms)
+				ProcessInitializeOnLoadMethodAttributes (209ms)
+				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4168 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 50 unused Assets / (0.8 MB). Loaded Objects now: 4626.
-Memory consumption went from 184.2 MB to 183.5 MB.
-Total: 5.981900 ms (FindLiveObjects: 0.507200 ms CreateObjectMapping: 0.392700 ms MarkObjects: 4.654300 ms  DeleteObjects: 0.425200 ms)
+Memory consumption went from 184.1 MB to 183.4 MB.
+Total: 6.065500 ms (FindLiveObjects: 0.474000 ms CreateObjectMapping: 0.456000 ms MarkObjects: 4.697000 ms  DeleteObjects: 0.436300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -158,28 +158,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 9102.629338 seconds.
-  path: Assets/Rooms/Finalized Rooms/Textures/HRDoors_Combined_Maps.png
-  artifactKey: Guid(42c6f778990d92149b496c76d573d693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/Finalized Rooms/Textures/HRDoors_Combined_Maps.png using Guid(42c6f778990d92149b496c76d573d693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f5fc4fc0e9b2fb180478692a3f9b15') in 0.281950 seconds 
+  Time since last request: 20617.361565 seconds.
+  path: Assets/Rooms/WR2_Whitebox.fbx
+  artifactKey: Guid(9373f1de34abe14488c697c3de6e4b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/WR2_Whitebox.fbx using Guid(9373f1de34abe14488c697c3de6e4b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1eedc655377cd00b15c3c8813063875') in 5.927425 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 399.805724 seconds.
-  path: Assets/Rooms/Finalized Rooms/Textures/HR_Trolly_Shelf_Top1_Combined_Maps.png
-  artifactKey: Guid(49686bfaf8daff841aeff4c6e718fdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/Finalized Rooms/Textures/HR_Trolly_Shelf_Top1_Combined_Maps.png using Guid(49686bfaf8daff841aeff4c6e718fdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e0057a29c4cd65d91a44b88057503f') in 0.050671 seconds 
+  Time since last request: 0.000037 seconds.
+  path: Assets/Rooms/HR0_Tutorial_Whitebox.fbx
+  artifactKey: Guid(15f337e5e056af64891c1e2f42edc465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/HR0_Tutorial_Whitebox.fbx using Guid(15f337e5e056af64891c1e2f42edc465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6640c75956e81ea8a86a7e2ad6374b8b') in 0.869139 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Rooms/Finalized Rooms/Textures/HR_Trolly_Shelf_Top3_Combined_Maps.png
-  artifactKey: Guid(7342c56df47e4864884a17ba85ef66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/Finalized Rooms/Textures/HR_Trolly_Shelf_Top3_Combined_Maps.png using Guid(7342c56df47e4864884a17ba85ef66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce9868c243bec7ee20194bff44435f0') in 0.022325 seconds 
+  Time since last request: 0.000050 seconds.
+  path: Assets/Rooms/WR3_Whitebox.fbx
+  artifactKey: Guid(8eaba3b57b8db03448a103b147d45610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/WR3_Whitebox.fbx using Guid(8eaba3b57b8db03448a103b147d45610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4651ddd05516b8d53bdc4fa825d599c2') in 1.628698 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Rooms/Finalized Rooms/Textures/HR_Trolly_Wheels_Combined_Maps.png
-  artifactKey: Guid(4cdcc6b70566b174f806e9a0ef58ddeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/Finalized Rooms/Textures/HR_Trolly_Wheels_Combined_Maps.png using Guid(4cdcc6b70566b174f806e9a0ef58ddeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd529ee81dcfb4d1edd539f5e3b2149e') in 0.162635 seconds 
+  Time since last request: 0.000047 seconds.
+  path: Assets/Rooms/ProjDev_Basement.fbx
+  artifactKey: Guid(e2c5e02fa64370b4d8021b4d0eef7feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/ProjDev_Basement.fbx using Guid(e2c5e02fa64370b4d8021b4d0eef7feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a83a38f32b476c388a6c156efb790d8') in 4.926463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Rooms/ProjDev_ILR.fbx
+  artifactKey: Guid(10bbebfc787ad4a4f8267f43c2e001a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/ProjDev_ILR.fbx using Guid(10bbebfc787ad4a4f8267f43c2e001a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa085bf67bff4977ba3847f6fb177b1') in 1.074423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.970057 seconds.
+  path: Assets/Rooms/Finalized Rooms/Curtains (Fixed V2).fbx
+  artifactKey: Guid(57c548cd9311ad84aa0feb61bc689e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/Finalized Rooms/Curtains (Fixed V2).fbx using Guid(57c548cd9311ad84aa0feb61bc689e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3094c444b4ad59d6924a4b736d82711') in 0.116450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Rooms/Finalized Rooms/Nightstand (Fixed V2).fbx
+  artifactKey: Guid(0bf5819172b283b448cc4db5b267e748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/Finalized Rooms/Nightstand (Fixed V2).fbx using Guid(0bf5819172b283b448cc4db5b267e748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63143b7c250b5f72c45d5dc7a417ad7') in 0.123862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Rooms/Finalized Rooms/LongTable (Fixed V2).fbx
+  artifactKey: Guid(8e3420c6cfb5ac04d87a2fed16ca403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rooms/Finalized Rooms/LongTable (Fixed V2).fbx using Guid(8e3420c6cfb5ac04d87a2fed16ca403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '995dcc675c639b5796759a7bd4cf7dfb') in 0.083705 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
