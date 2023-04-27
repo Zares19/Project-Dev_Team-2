@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1964143475081154868, guid: c29ccdfedc479e44c8145a7e022ef274, type: 3}
       propertyPath: m_Name
-      value: EnemySpit
+      value: EnemySpit Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964143475081154868, guid: c29ccdfedc479e44c8145a7e022ef274, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_Projectile
       objectReference: {fileID: 0}
     - target: {fileID: 3614830886243405826, guid: c29ccdfedc479e44c8145a7e022ef274, type: 3}
       propertyPath: m_Materials.Array.data[0]

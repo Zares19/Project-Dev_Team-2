@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PowerupScript : MonoBehaviour
 {
-    ControllerCharacter controller;
+    WeaponToggle toggle;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        controller = GameObject.FindGameObjectWithTag("Player").GetComponent<ControllerCharacter>();
+        toggle = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponToggle>();
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class PowerupScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            controller.numberOfBullets = 10;
+            toggle.numberOfBullets = 10;
             Destroy(gameObject);
         }
     }

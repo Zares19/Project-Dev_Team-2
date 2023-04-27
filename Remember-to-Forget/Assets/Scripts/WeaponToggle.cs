@@ -19,6 +19,7 @@ public class WeaponToggle : MonoBehaviour
     public Transform bulletSpawnPoint;
     public Rigidbody smallShot;
     public float bulletSpeed = 2000f;
+    public int numberOfBullets = 10;
 
     Animator _anim;
     // Start is called before the first frame update
@@ -57,9 +58,10 @@ public class WeaponToggle : MonoBehaviour
             if (_weapon == 1 && canMelee)
             {
                 Debug.Log("You are Meleeing");
-               StartCoroutine(MeleeAttack());
+                _anim.SetBool("hit1", true);
+                StartCoroutine(MeleeAttack());
             }
-            if (_weapon == 2 && canShoot)
+            if (_weapon == 2 && canShoot && numberOfBullets > 0)
             {
                 Debug.Log("You are Shooting");
                 _anim.SetTrigger("Shoot");
@@ -71,22 +73,17 @@ public class WeaponToggle : MonoBehaviour
     IEnumerator MeleeAttack()
     {
         canMelee = false;
-        lastClickedTime = Time.time;
-        noOfClicks++;
-        if (noOfClicks == 1)
-        {
-            _anim.SetBool("hit1", true);
-        }
-        yield return new WaitForSeconds(shootTime);
+        yield return new WaitForSeconds(meleeTime);
         canMelee = true;
     }
 
     IEnumerator ShootAttack()
     {
-        canShoot = false;
         Rigidbody playerBullet;
         playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
         playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
+        canShoot = false;
+        numberOfBullets--;
         yield return new WaitForSeconds(shootTime);
         canShoot = true;
     }

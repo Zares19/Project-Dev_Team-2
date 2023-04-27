@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -17,14 +18,13 @@ public class ControllerCharacter : MonoBehaviour
     [SerializeField] float turnSmoothing = 0.15f;
     [SerializeField] int weaponSelect = 1;
     public bool isDashing;
-    public bool isAttacking;
     public bool isDead;
 
-    public bool canShoot;
-    public Rigidbody smallShot;
-    public Transform bulletSpawnPoint;
-    public float bulletSpeed = 20;
-    public int numberOfBullets = 10;
+    //public bool canShoot;
+    //public Rigidbody smallShot;
+    //public Transform bulletSpawnPoint;
+    //public float bulletSpeed = 20;
+    //public int numberOfBullets = 10;
 
     GameManager gameManager;
     CharacterController charCTRL;
@@ -38,7 +38,7 @@ public class ControllerCharacter : MonoBehaviour
 
     private void Awake()
     {
-        canShoot = true;
+        //canShoot = true;
         isDead = false;
         charCTRL = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
@@ -75,14 +75,14 @@ public class ControllerCharacter : MonoBehaviour
 
             charCTRL.Move(moveVelocity * Time.deltaTime);
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (canShoot & numberOfBullets > 0)
-                {
-                    anim.SetTrigger("Shoot");
-                    StartCoroutine(PlayerShoot());
-                }
-            }
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //{
+                //if (canShoot & numberOfBullets > 0)
+                //{
+                    //anim.SetTrigger("Shoot");
+                    //StartCoroutine(PlayerShoot());
+               // }
+            //}
         }
         playerHurtTime -= Time.deltaTime;
         if (playerHurtTime < 0) ; playerHurtTime = 0;
@@ -93,12 +93,6 @@ public class ControllerCharacter : MonoBehaviour
         {
             Debug.Log("Pressing Dodge button");
             StartCoroutine(PlayerDash());
-        }
-
-        if (!isDead && !isAttacking)
-        {
-            
-
         }
     }
 
@@ -122,16 +116,16 @@ public class ControllerCharacter : MonoBehaviour
         isDashing = false;
     }
 
-    IEnumerator PlayerShoot()
-    {
-        Rigidbody playerBullet;
-        playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
-        playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
-        canShoot = false;
-        numberOfBullets--;
-        yield return new WaitForSeconds(.75f);
-        canShoot = true;
-    }
+    //IEnumerator PlayerShoot()
+    //{
+        //Rigidbody playerBullet;
+       // playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
+       // playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
+       // canShoot = false;
+       // numberOfBullets--;
+       // yield return new WaitForSeconds(.75f);
+       // canShoot = true;
+    //}
 
     IEnumerator SwitchScene()
     {
