@@ -20,9 +20,9 @@ public class HealthPowerup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && pHealth.playerHealth < 10)
         {
-            pHealth.playerHealth += 3;
+            pHealth.playerHealth += 5;
             Destroy(gameObject);
         }
     }
