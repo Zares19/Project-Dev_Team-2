@@ -15,7 +15,7 @@ C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-58736
+59097
 Successfully changed project path to: C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
 C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/wbwar/Documents/GitHub/Project-Dev_Team-2/Remember-to-Forget
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 75.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 124.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,198 +63,42 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56624
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006003 seconds.
+Registered in 0.006315 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 70.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 70.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.751 seconds
+- Completed reload, in  0.795 seconds
 Domain Reload Profiling:
-	ReloadAssembly (752ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (795ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (513ms)
-			LoadAssemblies (105ms)
+		EndReloadAssembly (524ms)
+			LoadAssemblies (129ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (121ms)
+			SetupTypeCache (122ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (297ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (309ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (71ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009004 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 90.27 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.600 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3602ms)
-		BeginReloadAssembly (156ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (3199ms)
-			LoadAssemblies (1531ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (315ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (86ms)
-			SetupLoadedEditorAssemblies (1170ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (90ms)
-				BeforeProcessingInitializeOnLoad (102ms)
-				ProcessInitializeOnLoadAttributes (763ms)
-				ProcessInitializeOnLoadMethodAttributes (195ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
-Refreshing native plugins compatible for Editor in 2.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4168 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (0.8 MB). Loaded Objects now: 4626.
-Memory consumption went from 184.2 MB to 183.4 MB.
-Total: 5.984300 ms (FindLiveObjects: 0.499000 ms CreateObjectMapping: 0.347600 ms MarkObjects: 4.717800 ms  DeleteObjects: 0.417900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 20617.361630 seconds.
-  path: Assets/Rooms/WhiteBoxing_OperatingRoom_01.fbx
-  artifactKey: Guid(1367af8287da05747a32c75470ae513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing_OperatingRoom_01.fbx using Guid(1367af8287da05747a32c75470ae513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057808ba96c633c545d48ab0f266257a') in 5.926992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Rooms/WhiteBoxing_Nursery.fbx
-  artifactKey: Guid(3bd5e436ae3952f4aa72f3e56d614cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing_Nursery.fbx using Guid(3bd5e436ae3952f4aa72f3e56d614cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b448af22694a75da5179de8fd269c9e5') in 1.296400 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Rooms/WR4_BossRoom_WhiteboxV2.fbx
-  artifactKey: Guid(8206fdf661146bb4aba6f0b20c553945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WR4_BossRoom_WhiteboxV2.fbx using Guid(8206fdf661146bb4aba6f0b20c553945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e50f0715affee42a2bfef9834361db4') in 2.179310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Rooms/F1 Hallways (Finished).fbx
-  artifactKey: Guid(c8165d02b13dd014fa0f5d6c36088f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/F1 Hallways (Finished).fbx using Guid(c8165d02b13dd014fa0f5d6c36088f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c22c34d355c36e927230a030a5eb3b') in 9.314635 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.540983 seconds.
-  path: Assets/Rooms/Finalized Rooms/Chair (Fixed V2).fbx
-  artifactKey: Guid(2ced8d832c64c944c8a78b2863843e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/Finalized Rooms/Chair (Fixed V2).fbx using Guid(2ced8d832c64c944c8a78b2863843e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28bf15655b549ea1a95c3ebe7cee00bb') in 0.095998 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Rooms/Finalized Rooms/Flower.fbx
-  artifactKey: Guid(c0535f4c1adfd0449b156f56cd1fb465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/Finalized Rooms/Flower.fbx using Guid(c0535f4c1adfd0449b156f56cd1fb465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f0cd5f7a1a07024b095d6ec2b86419') in 0.121657 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Rooms/Finalized Rooms/Walls + Floor + Doors (Fixed V2).fbx
-  artifactKey: Guid(4c38f167d5195d6438ff0ede39f3f11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/Finalized Rooms/Walls + Floor + Doors (Fixed V2).fbx using Guid(4c38f167d5195d6438ff0ede39f3f11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9f5239ed382edd8764448448e0e1e6') in 0.172535 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 510.512121 seconds.
-  path: Assets/Rooms/WhiteBoxing/HR0_Tutorial_Whitebox.fbx
-  artifactKey: Guid(c64fd2e10734b3e4996a7cfa6466cb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/HR0_Tutorial_Whitebox.fbx using Guid(c64fd2e10734b3e4996a7cfa6466cb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca109d0b4e6bc9626de8d8d299ba0e1') in 3.125315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Rooms/WhiteBoxing/HR2_Whitebox.fbx
-  artifactKey: Guid(cad147a73f9db184ebd534206f910404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/HR2_Whitebox.fbx using Guid(cad147a73f9db184ebd534206f910404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcfeb267ba79f0bc3b5aec3ce76c64f8') in 0.403102 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Rooms/WhiteBoxing/HR1_Whitebox.fbx
-  artifactKey: Guid(bd651141d0128d744ad699d3c2f3bfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/HR1_Whitebox.fbx using Guid(bd651141d0128d744ad699d3c2f3bfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797f989565e37f40c78b06ca41eede7b') in 0.650582 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Rooms/WhiteBoxing/ProjDev_Basement.fbx
-  artifactKey: Guid(ca4d80bdcc5530846bcf27576ea48996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/ProjDev_Basement.fbx using Guid(ca4d80bdcc5530846bcf27576ea48996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbcbd2eb20eb6c968dbcf96d03522383') in 1.929062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Rooms/WhiteBoxing/WhiteBoxing_Nursery.fbx
-  artifactKey: Guid(c38f3695dc475d34fbdc76869bfc950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/WhiteBoxing_Nursery.fbx using Guid(c38f3695dc475d34fbdc76869bfc950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e7e532f52578cf3fad4e7df9d4836a') in 2.567278 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Rooms/WhiteBoxing/HR3_Whitebox.fbx
-  artifactKey: Guid(d6bd694977ffee24abf6352c55934265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/HR3_Whitebox.fbx using Guid(d6bd694977ffee24abf6352c55934265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d210fd166757ded80daea65c847f0a') in 0.650779 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Rooms/WhiteBoxing/WR4_BossRoom_WhiteboxV2.fbx
-  artifactKey: Guid(a9e06df2964510d45b57981741264638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/WR4_BossRoom_WhiteboxV2.fbx using Guid(a9e06df2964510d45b57981741264638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7b965f16503101eacd9b1d32b3bd6c') in 1.055498 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Rooms/WhiteBoxing/WR1_Whitebox.fbx
-  artifactKey: Guid(3d1812fe4342eed4e8bd91278e0527a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/WR1_Whitebox.fbx using Guid(3d1812fe4342eed4e8bd91278e0527a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82dd19d95cf76d95a043a88ce9d5dc6') in 0.699378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Rooms/WhiteBoxing/ProjDev_Morgue.fbx
-  artifactKey: Guid(dbaa79e9dee38f6499c185b61bada1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/ProjDev_Morgue.fbx using Guid(dbaa79e9dee38f6499c185b61bada1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cf59f500f015ec38fd71bbf4eb15b4') in 0.470931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Rooms/WhiteBoxing/ProjDev_ILR.fbx
-  artifactKey: Guid(889bf71cd3733b04f81da2aa913ac251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rooms/WhiteBoxing/ProjDev_ILR.fbx using Guid(889bf71cd3733b04f81da2aa913ac251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1900fd618772fd857fd40538cba010') in 0.863410 seconds 
+Registered in 0.009056 seconds.
