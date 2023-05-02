@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(AudioSource))]
+
 
 public class ControllerCharacter : MonoBehaviour
 {
@@ -20,12 +22,6 @@ public class ControllerCharacter : MonoBehaviour
     public bool isDashing;
     public bool isDead;
 
-    //public bool canShoot;
-    //public Rigidbody smallShot;
-    //public Transform bulletSpawnPoint;
-    //public float bulletSpeed = 20;
-    //public int numberOfBullets = 10;
-
     GameManager gameManager;
     CharacterController charCTRL;
     Animator anim;
@@ -35,13 +31,16 @@ public class ControllerCharacter : MonoBehaviour
     [SerializeField] Vector3 moveDirection;
     //[SerializeField] float smoothInputSpeed = 0.2f;
     [SerializeField] float turnSmoothVelocity;
+    AudioScript audioScript;
+    AudioSource _audi;
 
     private void Awake()
     {
-        //canShoot = true;
         isDead = false;
         charCTRL = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
+        audioScript = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioScript>();
+        _audi = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -74,15 +73,6 @@ public class ControllerCharacter : MonoBehaviour
             }
 
             charCTRL.Move(moveVelocity * Time.deltaTime);
-
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{
-                //if (canShoot & numberOfBullets > 0)
-                //{
-                    //anim.SetTrigger("Shoot");
-                    //StartCoroutine(PlayerShoot());
-               // }
-            //}
         }
         playerHurtTime -= Time.deltaTime;
         if (playerHurtTime < 0) ; playerHurtTime = 0;
@@ -103,6 +93,16 @@ public class ControllerCharacter : MonoBehaviour
         StartCoroutine(SwitchScene());
     }
 
+    public void PDeath()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[3]);
+    }
+
+    public void Roll()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[5]);
+    }
+
     IEnumerator PlayerDash()
     {
         float startTime = Time.time;
@@ -116,17 +116,6 @@ public class ControllerCharacter : MonoBehaviour
         isDashing = false;
     }
 
-    //IEnumerator PlayerShoot()
-    //{
-        //Rigidbody playerBullet;
-       // playerBullet = Instantiate(smallShot, bulletSpawnPoint.position, bulletSpawnPoint.rotation) as Rigidbody;
-       // playerBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed);
-       // canShoot = false;
-       // numberOfBullets--;
-       // yield return new WaitForSeconds(.75f);
-       // canShoot = true;
-    //}
-
     IEnumerator SwitchScene()
     {
         yield return new WaitForSeconds(.5f);
@@ -137,6 +126,11 @@ public class ControllerCharacter : MonoBehaviour
     {
         playerHurtTime = 0.75f;
         anim.SetTrigger("Hurt");
+    }
+
+    public void PHurt()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[4]);
     }
 
 }

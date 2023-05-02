@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class WeaponToggle : MonoBehaviour
 {
     [SerializeField] public int _weapon;
@@ -22,11 +24,15 @@ public class WeaponToggle : MonoBehaviour
     public int numberOfBullets = 10;
 
     Animator _anim;
+    AudioScript audioScript;
+    AudioSource _audi;
     // Start is called before the first frame update
 
     private void Awake()
     {
         _anim = GetComponentInChildren<Animator>();
+        audioScript = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioScript>();
+        _audi = GetComponent<AudioSource>();
     }
     void Start()
     {
@@ -75,6 +81,16 @@ public class WeaponToggle : MonoBehaviour
         _anim.SetTrigger("hit1");
         yield return new WaitForSeconds(meleeTime);
         canMelee = true;
+    }
+
+    public void Shoot()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[2]);
+    }
+
+    public void Melee()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[1]);
     }
 
     IEnumerator ShootAttack()

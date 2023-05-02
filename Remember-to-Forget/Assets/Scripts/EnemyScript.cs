@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using DG.Tweening;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class EnemyScript : MonoBehaviour
 {
     NavMeshAgent navAgent;
@@ -12,6 +14,8 @@ public class EnemyScript : MonoBehaviour
     public LayerMask whatisGround, whatIsPlayer;
     public Transform projectileSpawnPoint;
     public Rigidbody enemyProjectile;
+    AudioScript audioScript;
+    AudioSource _audi;
 
     // Melee Hit Box
     public GameObject meleeHitBox;
@@ -43,6 +47,8 @@ public class EnemyScript : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        audioScript = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioScript>();
+        _audi = GetComponent<AudioSource>();
         _player = GameObject.Find("Player").transform;
         _anim = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
@@ -153,5 +159,10 @@ public class EnemyScript : MonoBehaviour
     {
         enemyHurtTime = 0.75f;
         _anim.SetTrigger("Hurt");
+    }
+
+    public void EHit()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[0]);
     }
 }

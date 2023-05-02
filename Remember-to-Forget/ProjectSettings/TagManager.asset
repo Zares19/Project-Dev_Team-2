@@ -10,6 +10,7 @@ TagManager:
   - Player_Projectile
   - Enviroment
   - Enemy_Projectile
+  - AudioManager
   layers:
   - Default
   - TransparentFX

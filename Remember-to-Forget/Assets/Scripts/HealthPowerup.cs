@@ -22,7 +22,7 @@ public class HealthPowerup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && pHealth.playerHealth < 10)
         {
-            pHealth.playerHealth += 5;
+            pHealth.playerHealth = 10;
             Destroy(gameObject);
         }
     }
