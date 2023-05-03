@@ -142,6 +142,16 @@ public class EnemyScript : MonoBehaviour
         meleeHitBox.SetActive(false);
     }
 
+    public void EMelee()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[8]);
+    }
+
+    public void ESpit()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[9]);
+    }
+
     IEnumerator LungeAttack()
     {
         Vector3 lungeTarget = _player.position;
@@ -164,5 +174,10 @@ public class EnemyScript : MonoBehaviour
     public void EHit()
     {
         _audi.PlayOneShot(audioScript.soundFX[0]);
+    }
+
+    public void EDeath()
+    {
+        _audi.PlayOneShot(audioScript.soundFX[7]);
     }
 }

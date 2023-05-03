@@ -44,4 +44,19 @@ public class ParentScript : MonoBehaviour
     {
         enemyScript.EHit();
     }
+
+    public void EnemyMelee()
+    {
+        enemyScript.EMelee();
+    }
+
+    public void EnemySpit()
+    {
+        enemyScript.ESpit();
+    }
+
+    public void EnemyDefeat()
+    {
+        enemyScript.EDeath();
+    }
 }
