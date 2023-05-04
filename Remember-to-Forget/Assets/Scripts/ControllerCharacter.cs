@@ -22,6 +22,7 @@ public class ControllerCharacter : MonoBehaviour
     public bool isDashing;
     public bool isDead;
 
+    Player_Health playerHealth;
     GameManager gameManager;
     CharacterController charCTRL;
     Animator anim;
@@ -41,6 +42,7 @@ public class ControllerCharacter : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         audioScript = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioScript>();
         _audi = GetComponent<AudioSource>();
+        playerHealth = GetComponent<Player_Health>();
     }
 
     // Start is called before the first frame update
@@ -52,7 +54,7 @@ public class ControllerCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isDead)
+        if (!playerHealth.isDead)
         {
             moveInput.x = Input.GetAxisRaw("Horizontal");
             moveInput.y = Input.GetAxisRaw("Vertical");
@@ -86,13 +88,6 @@ public class ControllerCharacter : MonoBehaviour
         }
     }
 
-    public void PlayerDeath()
-    {
-        isDead = true;
-        anim.SetTrigger("Death");
-        StartCoroutine(SwitchScene());
-    }
-
     public void PDeath()
     {
         _audi.PlayOneShot(audioScript.soundFX[3]);
@@ -114,12 +109,6 @@ public class ControllerCharacter : MonoBehaviour
             yield return null;
         }
         isDashing = false;
-    }
-
-    IEnumerator SwitchScene()
-    {
-        yield return new WaitForSeconds(.5f);
-        gameManager.SwitchScene(3);
     }
 
     public void PlayerHurt()
