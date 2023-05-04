@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = playerHealth.playerHealth * 0.01f;
+        healthBar.fillAmount = playerHealth.playerHealth * .1f;
     }
 
     public void SwitchScene(int _scene)

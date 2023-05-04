@@ -46,33 +46,33 @@ public class WeaponToggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            _pipeWeapon.SetActive(true);
-            _gun.SetActive(false);
-            _weapon = 1;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            _weapon = 2;
-            _pipeWeapon.SetActive(false);
-            _gun.SetActive(true);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                _pipeWeapon.SetActive(true);
+                _gun.SetActive(false);
+                _weapon = 1;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                _weapon = 2;
+                _pipeWeapon.SetActive(false);
+                _gun.SetActive(true);
+            }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (_weapon == 1 && canMelee)
+            if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("You are Meleeing");
-                StartCoroutine(MeleeAttack());
+                if (_weapon == 1 && canMelee)
+                {
+                    Debug.Log("You are Meleeing");
+                    StartCoroutine(MeleeAttack());
+                }
+                if (_weapon == 2 && canShoot && numberOfBullets > 0)
+                {
+                    Debug.Log("You are Shooting");
+                    _anim.SetTrigger("Shoot");
+                    StartCoroutine(ShootAttack());
+                }
             }
-            if (_weapon == 2 && canShoot && numberOfBullets > 0)
-            {
-                Debug.Log("You are Shooting");
-                _anim.SetTrigger("Shoot");
-                StartCoroutine(ShootAttack());
-            }
-        }
     }
 
     IEnumerator MeleeAttack()
