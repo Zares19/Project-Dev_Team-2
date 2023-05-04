@@ -7,6 +7,6 @@ public class ReturnLVL : MonoBehaviour
 {
     void OnTriggerEnter(Collider ChangeScene)
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Win");
     }
 }
