@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using DG.Tweening;
+//using DG.Tweening;
 
 [RequireComponent(typeof(AudioSource))]
 
@@ -49,7 +49,7 @@ public class EnemyScript : MonoBehaviour
     {
         audioScript = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioScript>();
         _audi = GetComponent<AudioSource>();
-        _player = GameObject.Find("Player").transform;
+        _player = GameObject.Find("PlayerTarget").transform;
         _anim = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
         meleeHitBox.SetActive(false);
@@ -156,7 +156,7 @@ public class EnemyScript : MonoBehaviour
     {
         Vector3 lungeTarget = _player.position;
         yield return new WaitForSeconds(0.2f);
-        transform.DOJump(lungeTarget, 2.25f, 1, 0.5f);
+        //transform.DOJump(lungeTarget, 2.25f, 1, 0.5f);
     }
 
     public void EnemyDeath()

@@ -17,6 +17,7 @@ public class WeaponToggle : MonoBehaviour
     // weapon objects
     public GameObject _pipeWeapon;
     public GameObject _gun;
+    public GameObject meleeHitBox;
 
     public Transform bulletSpawnPoint;
     public Rigidbody smallShot;
@@ -33,6 +34,7 @@ public class WeaponToggle : MonoBehaviour
         _anim = GetComponentInChildren<Animator>();
         audioScript = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioScript>();
         _audi = GetComponent<AudioSource>();
+        meleeHitBox.SetActive(false);
     }
     void Start()
     {
@@ -78,9 +80,13 @@ public class WeaponToggle : MonoBehaviour
     IEnumerator MeleeAttack()
     {
         canMelee = false;
+        meleeHitBox.SetActive(true);
         _anim.SetTrigger("hit1");
         yield return new WaitForSeconds(meleeTime);
         canMelee = true;
+        meleeHitBox.SetActive(true);
+        yield return new WaitForSeconds(.5f);
+        meleeHitBox.SetActive(false);
     }
 
     public void Shoot()
