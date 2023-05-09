@@ -15,7 +15,7 @@ public class Enemy_Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player_Projectile")
+        if (other.gameObject.tag == "Player_Projectile" || other.gameObject.tag == "Player_Melee")
         {
             if (!enemyScript.isDead)
             {

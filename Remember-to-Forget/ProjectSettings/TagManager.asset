@@ -12,6 +12,7 @@ TagManager:
   - Enemy_Projectile
   - AudioManager
   - GameManager
+  - Player_Melee
   layers:
   - Default
   - TransparentFX

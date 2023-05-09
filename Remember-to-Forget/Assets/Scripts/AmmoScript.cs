@@ -7,6 +7,7 @@ public class AmmoScript : MonoBehaviour
     [SerializeField]
     private Text _ammoText;
 
+
     public void UpdateAmmo(int count)
     {
         _ammoText.text = "Ammo: " + count;

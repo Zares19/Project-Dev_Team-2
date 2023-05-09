@@ -11,8 +11,6 @@ public class WeaponToggle : MonoBehaviour
     [SerializeField] public float meleeTime = .1f;
     [SerializeField] bool canShoot;
     [SerializeField] bool canMelee;
-    public static int noOfClicks = 0;
-    float lastClickedTime = 0;
 
     // weapon objects
     public GameObject _pipeWeapon;
