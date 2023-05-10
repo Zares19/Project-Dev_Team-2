@@ -67,18 +67,15 @@ public class KeyHolder : MonoBehaviour
     
     private void OnTriggerExit(Collider other)
     {
-        KeyScript key = other.GetComponent<KeyScript>();
-        if (key != null)
-        {
-            keyText.gameObject.SetActive(false);
-        }
-        KeyDoor keyDoor = other.GetComponent<KeyDoor>();
-        if (keyDoor != null)
-        {
-            if (!ContainsKey(keyDoor.GetKeyType()))
-            {
-                doorText.gameObject.SetActive(false);
-            }
-        }
+        StartCoroutine(DisableText());
+
+    }
+
+    IEnumerator DisableText()
+    {
+        yield return new WaitForSeconds(.5f);
+        keyText.gameObject.SetActive(false);
+        doorText.gameObject.SetActive(false);
     }
 }
+

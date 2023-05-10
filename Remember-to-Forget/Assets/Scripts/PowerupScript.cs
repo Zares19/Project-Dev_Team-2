@@ -21,7 +21,7 @@ public class PowerupScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && toggle.numberOfBullets < 10)
         {
             toggle.numberOfBullets = 10;
             Destroy(gameObject);
